@@ -1,0 +1,51 @@
+/* CentSchbkCyrill font adding */
+@font-face {
+    font-family: "CentSchbkCyrill";
+    src: url("../fonts/CentSchbkCyrill BT/tt6806m_.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "CentSchbkCyrill";
+    src: url("../fonts/CentSchbkCyrill BT/tt6805m_.ttf");
+    font-style: italic;
+}
+@font-face {
+    font-family: "CentSchbkCyrill";
+    src: url("../fonts/CentSchbkCyrill BT/tt6807m_.ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: "CentSchbkCyrill";
+    src: url("../fonts/CentSchbkCyrill BT/tt6804m_.ttf");
+    font-weight: 400;
+}
+/* CentSchbkCyrill font adding END */
+
+/* Circe font adding */
+@font-face {
+    font-family: "Circe";
+    src: url("../fonts/Circe/Circe-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Circe";
+    src: url("../fonts/Circe/ofont.ru_Circe.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Circe";
+    src: url("../fonts/Circe/Circe-ExtraBold.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Circe";
+    src: url("../fonts/Circe/10710.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Circe font adding END */
