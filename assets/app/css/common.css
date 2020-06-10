@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    overflow-x: hidden;
 }
 *{
     box-sizing: border-box;
@@ -24,8 +25,74 @@ body{
     background-color: red;
 }
 
+h2{
+    font-family: "CentSchbkCyrill";
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 51px;
+    letter-spacing: -0.8px;
+    text-transform: uppercase;
+    color: #323232;
+    text-align: center;
+    position: relative;
+    padding: 0 0 100px;
+}
+h2::after{
+    content: "";
+    width: 130px;
+    height: 3px;
+    background-color: #CF4747;
+    position: absolute;
+    left: 50%;
+    top: 63px;
+    transform: translate(-50%);
+}
+
 
 /* utility END */
+
+/* buttons */
+.button{
+    font-family: "Circe";
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    background-color: white;
+    color: #323232;
+    border: 1px solid #323232;
+    color: white;
+    padding: 15px 18px;
+    display: inline-block;
+    text-align: center;
+}
+.blue-button{
+    background-color: #0A4773;
+    border-color: #0A4773;
+}
+.blue-button:hover{
+    background-color: rgb(6, 44, 71);
+    border-color: rgb(6, 44, 71);
+}
+
+.red-outline-button{
+    background-color: #CF4747;
+    border-color: #CF4747;
+}
+.red-outline-button:hover{
+    background-color: rgb(116, 37, 37);
+    border-color: rgb(116, 37, 37);
+}
+
+.red-button{
+    background-color: #CF4747;
+    border-color: #CF4747;
+}
+.red-button:hover{
+    background-color: rgb(116, 37, 37);
+    border-color: rgb(116, 37, 37);
+}
+/* buttons END */
+
 
 /* header */
 header{
@@ -69,6 +136,7 @@ header .inner nav ul li a {
     color: #323232;
     text-decoration: none;
     font-weight: 600;
+    text-transform: uppercase;
 
 }
 header .inner nav ul li a:hover, header .inner nav ul li:hover,
@@ -102,27 +170,3 @@ header .inner .social-media i{
 /* header END */
 
 
-/* main-first-screen */
-.main-first-screen{
-    height: 567px;
-    background-color: seagreen;
-    padding-top: 142px;
-}
-.main-first-screen h1{
-    font-family: "CentSchbkCyrill";
-    font-weight: bold;
-    max-width: 600px;
-    font-size: 40px;
-    line-height: 53px;
-    letter-spacing: -0.8px;
-    margin-bottom: 10px;
-}
-.main-first-screen p{
-    font-family: "Circe";
-    font-weight: lighter;
-    max-width: 500px;
-    font-size: 20px;
-    letter-spacing: -0.8px;
-    line-height: 25px;
-}
-/* first-screen END */

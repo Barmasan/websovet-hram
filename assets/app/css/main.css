@@ -1,3 +1,218 @@
-/* main-article */
+/* main-first-screen */
+.main-first-screen{
+    height: 567px;
+    padding: 142px 50px 0;
+    background-image: url(../img/main/first-screen.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-first-screen h1{
+    font-family: "CentSchbkCyrill";
+    font-weight: bold;
+    max-width: 600px;
+    font-size: 40px;
+    line-height: 53px;
+    letter-spacing: -0.8px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #323232;
+}
+.main-first-screen p{
+    font-family: "Circe";
+    font-weight: lighter;
+    max-width: 500px;
+    font-size: 20px;
+    letter-spacing: -0.8px;
+    line-height: 25px;
+    margin-bottom: 33px;
+    color: #323232;
+}
+/* first-screen END */
 
+
+/* main-article */
+.main-article{
+    padding: 75px 0 100px;
+}
+.main-article .content{
+    display: flex;
+}
+.main-article .content .media {
+    width: 464px;
+    height: 506px;
+    margin-right: 35px;
+    flex-shrink: 0;
+}
+.main-article .content .media img{
+    width: 100%;
+}
+.main-article .content .text{
+    display: flex;
+    flex-direction: column;
+}
+.main-article .content .text h3{
+    font-family: "CentSchbkCyrill";
+    font-weight: 400;
+    font-size: 27.5px;
+    line-height: 19px;
+    margin-bottom: 23px;
+}
+.main-article .content .text > p{
+    font-family: "Circe";
+    font-weight: 400;
+    font-size: 16.5px;
+    max-width: 580px;
+    margin-bottom: 8px;
+}
+.main-article .content .text .info{
+    display: flex;
+    align-items: end;
+    margin-top: auto;
+}
+.main-article .content .text .info > p{
+    font-family: "Circe";
+    font-weight: 400;
+    font-size: 16.5px;
+    max-width: 320px;
+    line-height: 26px;
+    margin-bottom: -4px;
+}
+.main-article .content .text .info .link{
+    margin: auto 16px 2px auto;
+    font-family: "Circe";
+    letter-spacing: 0.1px;
+    font-weight: 600;
+    font-size: 16.3px;
+    color: #323232;
+    border-bottom: 1px solid #CF4747;
+    text-decoration: none;
+    line-height: 20px;
+    display: inline-block;
+}
 /* main-article END */
+
+/* donations */
+.donations{
+
+}
+.donations .header{
+    height: 483px;
+    background-image: url(../img/main/donations.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 196px;
+}
+.donations .header .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.donations .header .text{
+    max-width: 670px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+}
+.donations .header .text h3{
+    color: white;
+    font-family: "CentSchbkCyrill";
+    font-weight: 600;
+    font-size: 33.2px;
+    margin-bottom: 19px;
+}
+.donations .header .text p{
+    color: white;
+    font-family: "CentSchbkCyrill";
+    font-weight: 700;
+    font-style: italic;
+    font-size: 27.5px;
+}
+.donations .header .interactive{
+    width: 356px;
+    height: 287px;
+    background-color: white;
+    padding: 27px;
+}
+.donations .header .interactive .progress-info{
+    margin-bottom: 30px;
+}
+.donations .header .interactive .progress-info .wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+}
+.donations .header .interactive .progress-info .title{
+    font-family: "Circe";
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    margin-top: 13px;
+}
+.donations .header .interactive .progress-info .percent{
+    font-family: "Circe";
+    font-weight: 900;
+    font-size: 26px;
+}
+.donations .header .interactive .progress-info .progress-bar{
+    width: 100%;
+    height: 10px;
+    background-color: #DCDCDC;
+    margin-bottom: 6px;
+}
+.donations .header .interactive .progress-info .progress-bar .progress{
+    height: 100%;
+    background-image: linear-gradient(135deg, #cf4747 45.45%, #d78e84 45.45%, #d78e84 50%, #cf4747 50%, #cf4747 95.45%, #d78e84 95.45%, #d78e84 100%);
+    background-size: 15.56px 15.56px;
+}
+.donations .header .interactive .progress-info .income{
+    display: inline-block;
+    font-family: "Circe";
+    font-weight: 400;
+    font-size: 14px;
+}
+.donations .header .interactive .progress-info .income .income-total{
+    display: inline;
+    font-family: "Circe";
+    font-weight: 400;
+    font-size: 14px;
+    color: #CF4747;
+}
+
+.donations .header .interactive .buttons{
+
+}
+.donations .header .interactive .buttons > * {
+    width: 100%;
+}
+.donations .header .interactive .buttons a:first-child{
+    margin-bottom: 16px;
+}
+
+.donations .table{
+    
+}
+.donations .table h3{
+
+}
+.donations .table table{
+    width: 100%;
+}
+.donations .table thead{
+
+}
+.donations .table tbody{
+
+}
+.donations .table tr{
+
+}
+.donations .table tr:nth-child(2n){
+
+}
+.donations .table td{
+
+}
+
+/* donations END */
