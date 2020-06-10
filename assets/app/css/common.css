@@ -64,6 +64,7 @@ h2::after{
     padding: 15px 18px;
     display: inline-block;
     text-align: center;
+    font-weight: 600;
 }
 .blue-button{
     background-color: #0A4773;
@@ -73,14 +74,24 @@ h2::after{
     background-color: rgb(6, 44, 71);
     border-color: rgb(6, 44, 71);
 }
+.blue-outline-button{
+    background-color: white;
+    border-color: #0A4773;
+    color: #0A4773;
+}
+.blue-outline-button:hover{
+    background-color: #0A4773;
+    color: white;
+}
 
 .red-outline-button{
-    background-color: #CF4747;
+    background-color: white;
     border-color: #CF4747;
+    color: #CF4747;
 }
 .red-outline-button:hover{
-    background-color: rgb(116, 37, 37);
-    border-color: rgb(116, 37, 37);
+    background-color: #CF4747;
+    color: white;
 }
 
 .red-button{
