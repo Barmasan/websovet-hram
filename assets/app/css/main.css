@@ -219,10 +219,13 @@
     background-color: #CF4747;
     font-weight: 600;
     font-size: 18px;
-    color: white;
+    
 }
 .donations .table thead tr{
     height: 50px;
+}
+.donations .table thead td{
+    color: white;
 }
 .donations .table thead td:nth-child(1){
     width: 33%;
@@ -359,6 +362,7 @@
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 13px;
+    color: white;
 }
 .squares .square p{
     font-family: "Circe";
@@ -366,6 +370,7 @@
     max-width: 300px;
     line-height: 25px;
     text-align: center;
+    color: white;
 }
 .squares .square .read-more{
     margin-top: auto;
@@ -377,3 +382,296 @@
     margin-bottom: 2px;
 }
 /* squares END */
+
+/* social */
+.social {
+    padding: 108px 0 146px;
+    background-color: #F8F8F8;
+}
+.social h2{
+    padding-bottom: 95px;
+}
+.social .content{
+    display: flex;
+    justify-content: space-between;
+    height: 313px;
+}
+.social .content .text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.social .content .text p{
+    font-family: "Circe";
+    font-size: 22px;
+    line-height: 33px;
+}
+.social .content .text a{
+    margin-top: auto;
+    width: 158px;
+    height: 49px;
+}
+.social .content .media{
+    width: 545px;
+}
+.social .content .media .wrapper{
+    width: 100%;
+    margin-bottom: 9px;
+}
+.social .content .media .wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.social .content .media .caption{
+    font-family: "CentSchbkCyrill";
+    font-style: italic;
+    font-size: 16.5px;
+}
+/* social END */
+
+
+
+/* flight-9268 */
+.flight-9268{
+    background-color: #F8F8F8;
+    padding-bottom: 117px;
+}
+.flight-9268 .wrapper{
+    border: 1px solid #CF4747;
+    padding: 43px 80px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flight-9268 h2{
+    padding: 0 0 57px;
+}
+.flight-9268 p{
+    font-family: "Circe";
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 29px;
+}
+.flight-9268 a{
+    width: 158px;
+}
+/* flight-9268 END */
+
+/* partners */
+.partners{
+    padding: 76px 0 71px;
+}
+.partners .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.partners .items{
+    display: flex;
+    padding: 0px 10px;
+    justify-content: center;
+    margin-bottom: 35px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.partners .items .item{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    opacity: 0.6;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.partners .items .item:hover{
+    opacity: 1;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+.partners .items .item img{
+    width: 70%;
+}
+.partners a{
+    height: 48px;
+    width: 157px;
+}
+/* partners END */
+
+
+/* stages-of-construction */
+.stages-of-construction{
+    padding: 85px 0 50px;
+    background-color: #F8F8F8;
+}
+.stages-of-construction h2{
+
+}
+.stages-of-construction .content{
+    display: flex;
+    
+}
+.stages-of-construction .content .media{
+    width: 589px;
+    margin-right: 30px;
+}
+.stages-of-construction .content .media .wrapper{
+    width: 100%;
+    margin-bottom: 39px;
+}
+.stages-of-construction .content .media .wrapper img{
+    width: 100%;
+}
+.stages-of-construction .content .media .caption{
+    font-family: "CentSchbkCyrill";
+    font-style: italic;
+    font-size: 15.6px;
+}
+.stages-of-construction .content .info{
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.stages-of-construction .content .info .items{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.stages-of-construction .content .info .items .red-line{
+    top: 2px;
+    position: absolute;
+    left: 18px;
+    width: 3px;
+    height: 340px;
+    background-color: #CF4747;
+}
+.stages-of-construction .content .info .items .item{
+    display: flex;
+    margin-bottom: 19.8px;
+}
+.stages-of-construction .content .info .items .item .icon{
+    background-image: url(../img/icons/time-opacity.png);
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 41px;
+    transform: scale(0.9);
+    background-position: center;
+    margin: -1px 21px 0 -3px;
+    background-color: #F8F8F8;
+}
+.stages-of-construction .content .info .items .item p{
+    font-family: "Circe";
+    font-size: 17px;
+    max-width: 430px;
+    letter-spacing: -0.2px;
+    margin-top: -4px;
+}
+.stages-of-construction .content .info .buttons{
+    margin-left: 2px;
+    margin-bottom: 6px;
+}
+.stages-of-construction .content .info .buttons .red-button{
+    height: 47px;
+    width: 222px;
+    margin-right: 68px;
+}
+.stages-of-construction .content .info .buttons .red-outline-button{
+    width: 157px;
+    height: 47px;
+}
+/* stages-of-construction END */
+
+/* map */
+.map{
+    padding: 85px 0 0 ;
+}
+.map h2{
+    padding: 0 0 79px;
+}
+.map #map{
+    width: 100%;
+    height: 523px;
+    background-color: red;
+}
+/* map END */
+
+/* form */
+.form{
+    font-family: "Circe";
+    font-style: normal;
+    padding: 74px 0 73px;
+}
+.form .content{
+    display: flex;
+}
+.form .info{
+    width: 467px;
+    padding: 62px 0 0 1px;
+}
+.form .info address{
+
+}
+.form .info a{
+    text-decoration: none;
+}
+.form .info p{
+    letter-spacing: 0.27px;
+    line-height: 25px;
+    margin-bottom: 28px;
+}
+.form form{
+    width: 608px;
+    display: flex;
+    flex-direction: column;
+}
+.form form h3{
+    font-family: "CentSchbkCyrill";
+    font-size: 33px;
+    letter-spacing: -0.8px;
+    font-weight: 400;
+    margin-bottom: 21px;
+}
+
+.form form label{
+    font-size: 17px;
+}
+.form form input:focus, .form form textarea:focus{
+    outline: none;
+}
+.form form input[type='text']{
+    margin: 0 0 22px 2px;
+    border-radius: 0;
+    border: 1px solid #323232;
+    height: 33px;
+    width: 99.8%;
+    padding: 0 15px;
+}
+.form form .one-row{
+    display: flex;
+    margin-bottom: 14px;
+}
+.form form .one-row .form-group:nth-child(1){
+    width: 240px;
+    margin-right: 13px;
+}
+.form form .one-row .form-group:nth-child(2){
+    width: 352px;
+}
+
+.form form textarea[name="question"]{
+    border-radius: 0;
+    height: 115px;
+    margin-bottom: 29px;
+    width: 99.8%;
+    resize: none;
+    padding: 15px;
+}
+.form form .button{
+    align-self: flex-end;
+    padding: 13px 31px;
+    margin-right: 2px;
+}
+/* form END */
