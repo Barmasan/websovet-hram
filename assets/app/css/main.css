@@ -305,6 +305,11 @@
 }
 .news .cards .card .button{
     padding: 13px 31px;
+    background-color: #F4F4F4;
+}
+.news .cards .card .button:hover {
+    background-color: #0A4773;
+    color: white;
 }
 
 /* news END */
