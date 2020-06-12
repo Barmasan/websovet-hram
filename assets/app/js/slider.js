@@ -5,7 +5,13 @@ $(document).ready(function(){
         arrows: false,
         fade: true,
         asNavFor: '.slider-nav',
-           autoplay: true
+        autoplay: true,
+        responsive: [{
+            breakpoint: 576,
+            settings: {
+                arrows: true
+            }
+        }]
       });
       $('.slider-nav').slick({
         slidesToShow: 5,

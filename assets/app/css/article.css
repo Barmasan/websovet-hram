@@ -125,3 +125,57 @@ header * {
     width: 800px;
     letter-spacing: 0.3px;
 }
+
+@media (max-width: 576px){
+    .article .slider .slider-nav, .article .breadcrumbs{
+        display: none;
+    }
+    .article .slider .slider-for{
+        height: 175px;
+        margin-bottom: 0;
+    }
+    .article h2{
+        font-size: 23px;
+        padding: 40px 30px 60px;
+        line-height: 35px;
+    }
+    .article h2::after{
+        top: 133px;
+        width: 90px;
+    }
+    .article h1{
+        padding: 0 20px;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        margin-bottom: 4px;
+    }
+    .article .date{
+        padding: 0 20px;
+        margin-bottom: 13px;
+    }
+    .article .wrapper {
+        padding: 20px 0 20px;
+    }
+    .article .slider {
+        margin-bottom: 20px;
+    }
+    .article .text {
+        margin-bottom: 35px;
+        padding: 0 20px;
+    }
+    .article .donation{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .article .donation p{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .article .slider .slick-prev {
+        left: 0px;
+    }
+    .article .slider .slick-next {
+        right: 0px;
+    }
+}
