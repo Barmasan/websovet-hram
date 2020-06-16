@@ -90,12 +90,10 @@ header * {
     top: 50%;
     z-index: 50;
     margin-top: -12px;
-    background-image: url(../img/icons/time-opacity.png);
-    background-repeat: no-repeat;
     width: 50px;
     height: 52px;
     border: none;
-    background-color: white;
+    background-color: transparent;
     text-indent: -9999px;
 }
 .article .slider .slick-arrow:focus{
@@ -104,8 +102,28 @@ header * {
 .article .slider .slick-prev{
 	left: -70px;
 }
+.article .slider .slick-prev::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/icons/left-arrow.png);
+    background-size: 50px;
+}
 .article .slider .slick-next{
 	right: -70px;
+}
+.article .slider .slick-next::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/icons/right-arrow.png);
+    background-size: 50px;
 }
 .article .text{
     margin-bottom: 30px;

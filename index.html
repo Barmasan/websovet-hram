@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="assets/app/libs/slick/slick.css"/>
     <link rel="stylesheet" href="assets/app/css/fonts.css">
     <link rel="stylesheet" href="assets/app/css/common.css">
 
@@ -10,6 +12,8 @@
 
 
     <script src="https://kit.fontawesome.com/f011955513.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <!-- <script src="https://api-maps.yandex.ru/2.1.66/?apikey=c95e2082-cc42-4f35-b434-5488975c222f&lang=en_US" type="text/javascript"></script> -->
     <title>Document</title>
 </head>
 <body>
@@ -133,7 +137,7 @@
         <div class="table">
             <div class="container">
                 <h3>СПИСОК ПОЖЕРТВОВАВШИХ НА СТРОИТЕЛЬСТВО ХРАМА</h3>
-                <table>
+                <table class="table-desktop">
                     <thead>
                         <tr>
                             <td>ИМЯ/ОРГАНИЗАЦИЯ</td>
@@ -166,6 +170,36 @@
                             <td>Иван Иванов</td>
                             <td>100 руб.</td>
                             <td>27.04.2020 18:30</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table-mobile"  width='100%'>
+                    <thead>
+                        <tr>
+                            <td>ИМЯ/ОРГАНИЗАЦИЯ</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Сергей Иванов</td>
+                            <td>100 руб.<br><div class="date">27.04.2020 18:30</div></td>
+                        </tr>
+                        <tr>
+                            <td>Иван Иванов</td>
+                            <td>100 руб.<br><div class="date">27.04.2020 18:30</div></td>
+                        </tr>
+                        <tr>
+                            <td>Иван Иванов</td>
+                            <td>100 руб.<br><div class="date">27.04.2020 18:30</div></td>
+                        </tr>
+                        <tr>
+                            <td>Иван</td>
+                            <td>100 руб.<br><div class="date">27.04.2020 18:30</div></td>
+                        </tr>
+                        <tr>
+                            <td>Иван Иванов</td>
+                            <td>100 руб.<br><div class="date">27.04.2020 18:30</div></td>
                         </tr>
                     </tbody>
                 </table>
@@ -277,6 +311,16 @@
                 <!-- <div class="item"><img src="assets/app/img/common/partners/granit.png" alt=""></div>
                 <div class="item"><img src="assets/app/img/common/partners/granit.png" alt=""></div> -->
             </div>
+            <div class="wrapper" style="width: 100%;">
+                <div class="mobile-items">
+                    <img src="assets/app/img/common/partners/granit.png" alt="">
+                    <img src="assets/app/img/common/partners/granit.png" alt="">
+                    <img src="assets/app/img/common/partners/granit.png" alt="">
+                    <img src="assets/app/img/common/partners/granit.png" alt="">
+                    <img src="assets/app/img/common/partners/granit.png" alt="">
+                </div>
+            </div>
+
             <a href="" class="button red-outline-button">ПОКАЗАТЬ ВСЕ</a>
         </div>
     </section>
@@ -317,6 +361,7 @@
                     </div>
                     <div class="buttons">
                         <a href="" class="button red-button">СДЕЛАТЬ ПОЖЕРТВОВАНИЕ</a>
+                        <div class="caption-mobile">Нам очень нужна Ваша помощь! Вы можете помочь строительству нашего социального центра и храма, воспользовавшись формой для пожертвований на нашем сайте.</div>
                         <a href="" class="button red-outline-button">ПОДРОБНЕЕ</a>
                     </div>
                 </div>
@@ -326,7 +371,28 @@
     </section>
     <section class="map">
         <h2>МЕСТОПОЛОЖЕНИЕ</h2>
-        <div id="map"></div>
+        <div class="info">
+            <p>
+                Адрес: Россия, 198206, Санкт-Петербург,<br>
+                Красносельский район, проспект Героев,<br>
+                берег Матисова канала, уч. 14<br>
+                Станция метро «Автово»,<br>
+                «Проспект Ветеранов»
+            </p>
+            <p>
+                Настоятель храма -<br>
+                священник Сергий Кубышкин<br>
+                <a href="tel:+79110986000">+7 911 098 6000</a>
+            </p>
+            <p>
+                <a href="mailto:0996000@gmail.com">0996000@gmail.com</a><br>
+                <a href="https://vk.com/hram9268">https://vk.com/hram9268</a><br>
+                <a href="https://fb.com/hram9268">https://fb.com/hram9268</a>
+            </p>
+        </div>
+        <div id="map">
+            <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aff1c752c3e8bd4128b4d8b67ebddda92adff7873c4278aa01470d5e5681896f0&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe> -->
+        </div>
     </section>
     <section class="form">
         <div class="container">
@@ -441,7 +507,10 @@
         </div>
     </footer>
     <script type="text/javascript" src="assets/app/libs/jquery/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="assets/app/libs/slick/slick.js"></script>
 
+    <script type="text/javascript" src="assets/app/js/slider-partners.js"></script>
     <script type="text/javascript" src="assets/app/js/mobile-nav.js"></script>
+    <script type="text/javascript" src="assets/app/js/map.js"></script>
 </body>
 </html>
