@@ -137,15 +137,18 @@ header .inner{
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 header .logo-wrapper{
-    width: 22%; 
+    width: 350px;
 }
 header .inner .logo{
-    width: 220px;
+    width: 350px;
 }
 header .inner nav{
-    width: 63%;
+    width: 650px;
+    padding: 0 20px;
+    margin-left: auto;
 }
 header .inner nav ul{
     list-style: none;
@@ -155,11 +158,10 @@ header .inner nav ul{
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    /* padding: 0 80px 0 137px; */
     margin-top: 16px;
 }
 header .inner nav ul li{
-    margin-right: 26px;
+    
 }
 header .inner nav ul li a {
     font-family: "Circe";
@@ -176,7 +178,6 @@ header .inner .social-media i:hover{
 }
 header .inner nav ul .social-centre{
     color: #CF4747;
-    margin-left: auto;
     margin-right: 0;
     border-bottom: 2px solid;
     line-height: 15px;
@@ -185,11 +186,10 @@ header .inner nav ul .social-centre > a{
     color: #CF4747;
 }
 header .inner .social-media{
-    width: 15%;
+    width: 140px;
     display: flex;
     justify-content: flex-end;
     margin-top: 11px;
-    margin-left: auto;
 }
 header .inner .social-media a{
     margin-left: 20px;
@@ -313,9 +313,30 @@ header .inner .social-media i{
         transform: rotate(45deg);
     }
 }
+@media (max-width: 1200px){
+    header .inner .social-media{
+        display: none;
+    }
+}
 /* header END */
 
-
+/* mobile-logo */
+.mobile-logo{
+    height: 130px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8F8;
+}
+.mobile-logo img{
+    width: 80%;
+}
+@media (max-width: 576px){
+    .mobile-logo{
+        display: flex;
+    }
+}
+/* mobile-logo END */
 
 /* footer */
 footer{

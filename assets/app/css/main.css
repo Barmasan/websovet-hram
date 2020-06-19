@@ -469,7 +469,7 @@
         top: 50px;
     }
 }
-@media (max-width: 375px){
+@media (max-width: 374px){
     .news h2::after {
         top: 76px;
     }
@@ -832,27 +832,31 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
 }
 .stages-of-construction .content .info .items .red-line{
-    top: 2px;
+    top: 0px;
     position: absolute;
     left: 18px;
     width: 3px;
-    height: 340px;
+    height: 100%;
     background-color: #CF4747;
+    z-index: -1;
 }
 .stages-of-construction .content .info .items .item{
     display: flex;
     margin-bottom: 19.8px;
 }
 .stages-of-construction .content .info .items .item .icon{
-    background-image: url(../img/icons/time-opacity.png);
+    background-image: url(../img/icons/time.png);
     background-repeat: no-repeat;
-    width: 43px;
-    height: 41px;
-    transform: scale(0.9);
+    width: 44px;
+    height: 30px;
+    background-size: 30px;
+    /* transform: scale(0.9); */
     background-position: center;
-    margin: -1px 21px 0 -3px;
+    margin: -1px 10px 0 -3px;
     background-color: #F8F8F8;
 }
 .stages-of-construction .content .info .items .item p{
@@ -861,6 +865,7 @@
     max-width: 430px;
     letter-spacing: -0.2px;
     margin-top: -4px;
+    position: relative;
 }
 .stages-of-construction .content .info .buttons{
     margin-left: 2px;
@@ -877,6 +882,21 @@
 }
 .stages-of-construction .content .info .buttons .caption-mobile{
     display: none;
+}
+.stages-of-construction .content .info .items .item:last-child{
+    margin-bottom: 0;
+}
+.stages-of-construction .content .info .items .item:last-child p::after{
+    content: "";
+    display: block;
+    width: 22px;
+    height: 100%;
+    /* margin-top: 29px; */
+    background-color: #F8F8F8;
+    position: absolute;
+    top: 3px;
+    left: -42px;
+    z-index: -1;
 }
 @media (max-width: 576px){
     .stages-of-construction{
@@ -910,13 +930,16 @@
     .stages-of-construction .content .info .items{
         padding: 0 20px;
         max-width: 320px;
+        margin: 0 auto 20px;
     }
     .stages-of-construction .content .info .items .item p{
         font-size: 14px;
         letter-spacing: normal;
+        position: relative;
+        max-width: 250px;
     }
     .stages-of-construction .content .info .items .item .icon{
-        width: 38px;
+        width: 22px;
         background-size: 22px 22px;
         height: 22px;
         margin: -1px 9px 0 -3px;
@@ -924,7 +947,7 @@
     .stages-of-construction .content .info .items .red-line{
         left: 26px;
         width: 2px;
-        height: 387px;
+        height: 100%;
     }
     .stages-of-construction .content .info .buttons{
         display: flex;
@@ -933,9 +956,24 @@
     }
     .stages-of-construction .content .info .buttons .red-outline-button{
         margin-bottom: 20px;
+        background-color: #FAFAFA;
     }
     .stages-of-construction .content .info .buttons .red-button{
         width: 100%;
+    }
+    .stages-of-construction .content .info .items .item:last-child{
+        margin-bottom: 0;
+    }
+    .stages-of-construction .content .info .items .item:last-child p::after{
+        content: "";
+        display: block;
+        width: 22px;
+        height: 100%;
+        /* margin-top: 22px; */
+        background-color: #FAFAFA;
+        position: absolute;
+        top: 3px;
+        left: -31px;
     }
 }
 @media (max-width: 375px){
@@ -955,7 +993,6 @@
 .map #map{
     width: 100%;
     height: 523px;
-    background-color: red;
 }
 .map .info{
     display: none;

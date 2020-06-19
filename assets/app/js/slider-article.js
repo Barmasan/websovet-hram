@@ -9,7 +9,10 @@ $(document).ready(function(){
         responsive: [{
             breakpoint: 576,
             settings: {
-                arrows: true
+                arrows: true,
+                infinite: true,
+                prevArrow: $('.prev'),
+                nextArrow: $('.next'),
             }
         }]
       });

@@ -125,6 +125,30 @@ header * {
     background: url(../img/icons/right-arrow.png);
     background-size: 50px;
 }
+.article .arrows{
+    display: none;
+    justify-content: center;
+    align-items: center;
+} 
+.article .arrows .wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+.article .arrows .prev{
+    width: 50px;
+    height: 50px;
+    background: url(../img/icons/left-arrow.png);
+    background-size: 50px;
+}
+.article .arrows .next{
+    width: 50px;
+    height: 50px;
+    background: url(../img/icons/right-arrow.png);
+    background-size: 50px;
+}
+
+
 .article .text{
     margin-bottom: 30px;
 }
@@ -176,7 +200,7 @@ header * {
         padding: 20px 0 20px;
     }
     .article .slider {
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
     .article .text {
         margin-bottom: 35px;
@@ -195,5 +219,8 @@ header * {
     }
     .article .slider .slick-next {
         right: 0px;
+    }
+    .article .arrows{
+        display: flex;
     }
 }
